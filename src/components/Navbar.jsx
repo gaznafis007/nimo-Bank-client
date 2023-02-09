@@ -11,7 +11,7 @@ const Navbar = () => {
       <ul className={`list-none sm:flex hidden gap-4`}>
         {
           navLinks.map((navLink,index)=>(
-            <li className={`font-normal text-base
+            <li className={`font-thin text-base
             text-white font-poppins`} key={navLink.id}>
               <a className={`hover:text-secondary`} href={`#${navLink.id}`}>{navLink.title}</a>
             </li>
