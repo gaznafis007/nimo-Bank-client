@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className={`${styles.flexCenter} ${styles.paddingY} flex-col`}>
       <div className={`${styles.flexStart} md:flex-row flex-col mb-8 w-full`}>
         <div className='flex-1 flex-col justify-start mr-10 flex'>
-          <h2 className='text-7xl text-white font-poppins font-bold'>nimo<span className='text-secondary'>Bank</span></h2>
+          <h2 className='text-4xl md:text-7xl text-white font-poppins font-bold'>nimo<span className='text-secondary'>Bank</span></h2>
         <p className={`${styles.paragraph} text-dimWhite mt-4 max-w-[470px]`}>
         A new way to make the payments<br className='sm:block hidden'/> easy, reliable and secure.
         </p>
@@ -18,7 +18,7 @@ const Footer = () => {
         <h4 className='font-poppins font-medium leading-[27px] text-white text-[18px]'>{footerLink.title}</h4>
         <ul className={`list-none mt-4`}>
           {
-            footerLink.links.map((link,index)=>(<li key={index} className={`font-poppins font-normal text-base leading-6 text-dimWhite hover:text-secondary ${index!==footerLink.links.length-1 ? "mb-4" : "mb-0"}`}>{link.name}</li>))
+            footerLink.links.map((link,index)=>(<li key={link.id} className={`font-poppins font-normal text-base leading-6 text-dimWhite hover:text-secondary ${index!==footerLink.links.length-1 ? "mb-4" : "mb-0"}`}>{link.name}</li>))
           }
         </ul>
       </div>
@@ -33,8 +33,8 @@ const Footer = () => {
         <div className="flex flex-row mt-6 md:mt-0">
           {
             socialMedia.map((media,i)=>(
-              <a href={media.link} className="cursor-pointer">
-                <img key={media.id} src={media.icon} alt={media.id} className={` ${i !== socialMedia.length ? "mr-4" : mr-0}`}/>
+              <a  key={media.id} href={media.link} className="cursor-pointer">
+                <img src={media.icon} alt={media.id} className={` ${i !== socialMedia.length ? "mr-4" : mr-0}`}/>
               </a>
             ))
           }
