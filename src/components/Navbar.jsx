@@ -21,13 +21,13 @@ const Navbar = () => {
       <button onClick={()=>SetOpenMenu(!openMenu)} className='lg:hidden flex flex-1 justify-end cursor-pointer'>
         {openMenu===true?<img src={menu} alt="menu-bar" />:<img src={close} alt="menu-bar" />}
       </button>
-      <div className={`${openMenu ? "hidden": "flex"} lg:hidden absolute top-10 right-0 mx-4 my-2 bg-black-gradient rounded-xl  p-6 sidebar min-w-[140px]`}>
+      <div className={`${openMenu ? "hidden": "flex"} lg:hidden absolute top-10 right-0 mx-4 my-2 bg-black-gradient-2 rounded-xl  p-6 sidebar min-w-[140px]`}>
       <ul className={`list-none flex flex-col items-center gap-2`}>
         {
           navLinks.map((navLink,index)=>(
             <li className={`font-small text-base
             text-white font-poppins`} key={navLink.id}>
-              <a className={`hover:text-secondary`} href={`#${navLink.id}`}>{navLink.title}</a>
+              <a href={`#${navLink.id}`} className={`hover:text-secondary cursor-pointer`} >{navLink.title}</a>
             </li>
           ))
         }

@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from "./styles"
 import {Navbar, Hero, Billing, Business, Clients, CardDeals, Footer, Testimonials, Stats} from "./components/components"
+import CallToAction from './components/CallToAction'
 
 const App = () => {
   return (
@@ -19,10 +20,11 @@ const App = () => {
         <div className={`${styles.paddingX} ${styles.boxWidth}`}>
         <Stats/>
         <Business/>
-        <Clients/>
+        <Billing/>
         <CardDeals/>
         <Testimonials/>
-        <Billing/>
+        <Clients/>
+        <CallToAction/>
         <Footer/>
         </div>
       </div>
