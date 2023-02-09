@@ -11,7 +11,7 @@ const Hero = () => {
           <div className="flex flex-row items-center px-4 py-[6px] bg-discount-gradient mb-2 rounded-[10px]">
             <img src={discount} alt="discount" className={`w-8 h-8`} />
             <p className={`${styles.paragraph} capitalize ml-2`}>
-              <span className='text-white'>20%</span> discount for <span className='text-white'>1 month</span> account
+              <span className='text-white'>7%</span> discount for <span className='text-white'>1 month</span> account
             </p>
           </div>
       <div className="flex flex-row justify-between items-center w-full">
@@ -20,7 +20,7 @@ const Hero = () => {
           the next <br className='sm:block hidden'></br> <span className='text-gradient'>generation</span> 
           <br className='sm:block hidden'></br>payment method
         </h1>
-        <p className={`${styles.paragraph} text-sm my-4 ss:leading-10`}>Our team of experts uses a methodology to identify <br className='sm:block hidden'></br>the credit cards most likely to fit your needs.<br className='sm:block hidden'></br>We examine annual percentage rates, annual fees.</p>
+        <p className={`${styles.paragraph} text-sm my-4 ss:leading-8`}>Our team of experts uses a methodology to identify <br className='sm:block hidden'></br>the credit cards most likely to fit your needs.<br className='sm:block hidden'></br>We examine annual percentage rates, annual fees.</p>
 
         {/* <button className='bg-blue-gradient p-4 text-primary font-medium outline-none text-[18px] font-poppins rounded-md'>Get Started</button> */}
         <Button></Button>
