@@ -1,6 +1,7 @@
 import React from 'react'
 import { discount, robot } from '../assets'
 import styles from "../styles"
+import Button from './Button'
 
 
 const Hero = () => {
@@ -21,7 +22,8 @@ const Hero = () => {
         </h1>
         <p className={`${styles.paragraph} text-sm my-4 ss:leading-10`}>Our team of experts uses a methodology to identify <br className='sm:block hidden'></br>the credit cards most likely to fit your needs.<br className='sm:block hidden'></br>We examine annual percentage rates, annual fees.</p>
 
-        <button className='bg-blue-gradient p-4 text-white rounded-md'>Get Started</button>
+        {/* <button className='bg-blue-gradient p-4 text-primary font-medium outline-none text-[18px] font-poppins rounded-md'>Get Started</button> */}
+        <Button></Button>
         </div>
       </div>
       </div>
